@@ -11,7 +11,7 @@ request.onsuccess = (event) => {
   db = event.target.result;
   // checks if the app is online
   if (navigator.onLine) {
-    checkDb();
+    readDB();
   }
 };
 
@@ -21,14 +21,14 @@ request.onerror = (event) => {
 
 function storetransaction(activity) {
   // Saves a transaction
-  const transaction = db.transaction(["pending"], "read-write");
+  const transaction = db.transaction(["pending"], "readwrite");
   const store = transaction.objectStore("pending");
   store.add(activity);
 }
 
 function readDB() {
   // Access transactions
-  const transaction = db.transaction(["pending"], "read-write");
+  const transaction = db.transaction(["pending"], "readwrite");
   const save = transaction.objectStore("pending");
   const pendingActivity = save.getAll();
 
@@ -46,7 +46,7 @@ function readDB() {
         .then((response) => response.json())
         .then(() => {
           // Post transactions and clear them
-          const transaction = db.transaction(["pending"], "read-write");
+          const transaction = db.transaction(["pending"], "readwrite");
           const record = transaction.objectStore("pending");
           record.clear();
         });
