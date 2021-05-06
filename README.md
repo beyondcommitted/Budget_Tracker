@@ -30,6 +30,7 @@ When brought back online:
 * [License](#License)
 * [Contributions](#Contributions)
 * [Questions](#Questions)
+* [Mock Up](#Mock-Up)
 
 ## Usage
 ---
@@ -68,5 +69,5 @@ Below are the needed links to the submit this application to be graded:<br>
  ## [GitHub](https://github.com/beyondcommitted/Budget_Tracker)<br>
  ## [Deployment](https://budgetanytime.herokuapp.com/)
 ---
- ## Mock Up
+ ## Mock-Up
  ![Budget Tracker](https://github.com/beyondcommitted/Budget_Tracker/blob/main/public/images/BudgetTracker.png?raw=true)
