@@ -69,4 +69,4 @@ Below are the needed links to the submit this application to be graded:<br>
  ## [Deployment](https://budgetanytime.herokuapp.com/)
 ---
  ## Mock Up
- ![Budget Tracker](public\images\BudgetTracker.png)
+ ![Budget Tracker](https://github.com/beyondcommitted/Budget_Tracker/blob/main/public/images/BudgetTracker.png?raw=true)
